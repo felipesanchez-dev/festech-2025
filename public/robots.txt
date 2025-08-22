@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.jsconf.es/sitemap.xml
+Sitemap: https://www.festech.co/sitemap-index.xml
