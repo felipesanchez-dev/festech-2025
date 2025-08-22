@@ -1,0 +1,72 @@
+---
+import { LUGAR_MAPA } from '@/shared/constants/links'
+import Container from '../components/ui/Container.astro'
+import UnderlineWord from '../components/ui/UnderlineWord.astro'
+import AddToCalendarDialog from '../components/features/AddToCalendarDialog.astro'
+import Agenda from '@/icons/Agenda.svg'
+import Pin from '@/icons/Pin.svg'
+import ArrowRight from '@/icons/ArrowRight.svg'
+---
+
+<section class="bg-javascript text-black pb-8 py-12 px-4 sm:px-6">
+  <Container>
+    <h2
+      class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl text-center font-clash max-w-5xl mx-auto font-bold mb-2"
+    >
+      Festech 2025
+    </h2>
+    <h2
+      class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl text-center font-clash max-w-5xl mx-auto leading-tight"
+    >
+      <strong class="font-semibold"
+        >El corazón tecnológico de Colombia latirá en el
+        <UnderlineWord class="!left-4 sm:!left-8 md:!left-20">Tolima</UnderlineWord>
+      </strong>
+    </h2>
+
+    <div
+      class="flex py-8 sm:py-12 gap-4 sm:gap-6 md:gap-x-10 justify-between flex-col md:flex-row gap-y-6 sm:gap-y-8 md:gap-y-12"
+    >
+      <article class="p-4 sm:p-6 md:p-8 lg:p-12 border border-black w-full">
+        <span
+          class="flex justify-start gap-x-2 items-center text-base sm:text-lg md:text-xl opacity-70"
+          ><Agenda slot="icon-left" />
+          ¿Cuándo?
+        </span>
+        <h3
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-clash font-medium mt-2 leading-tight"
+        >
+          Del 11 al 13 de septiembre 2025
+        </h3>
+        <h4 class="text-base sm:text-lg md:text-xl font-light mt-1 text-black">
+          <AddToCalendarDialog />
+        </h4>
+      </article>
+
+      <article class="p-4 sm:p-6 md:p-8 lg:p-12 border border-black w-full">
+        <span
+          class="flex justify-start gap-x-2 items-center text-base sm:text-lg md:text-xl opacity-70"
+        >
+          <Pin slot="icon-left" />
+          Lugar:
+        </span>
+        <h4
+          class="text-2xl sm:text-3xl md:text-4xl lg:text-6xl font-clash font-medium mt-2 leading-tight"
+        >
+          Gobernación del Tolima
+        </h4>
+        <h5 class="text-base sm:text-lg md:text-xl font-light mt-1">
+          <a
+            href={LUGAR_MAPA}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="font-clash group flex gap-x-1 items-center font-medium hover:opacity-70"
+          >
+            <span class="underline underline-offset-4">Mostrar en el mapa</span>
+            <ArrowRight slot="icon-right" class="group-hover:translate-x-1 transition" />
+          </a>
+        </h5>
+      </article>
+    </div>
+  </Container>
+</section>

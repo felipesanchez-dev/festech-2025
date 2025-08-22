@@ -1,0 +1,624 @@
+---
+import UnderlineWord from '../ui/UnderlineWord.astro'
+---
+
+<div class="relative flex flex-col items-center justify-center px-4 text-center w-full max-w-full">
+  <div class="space-y-8 pt-24 flex flex-col">
+    <p
+      class="text-4xl text-balance md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-[#F7DF1F]/40 via-[#FFFE65] to-[#F7DF1F]/25 font-clash font-[900] inline-block"
+    >
+      ¡YA ESTAMOS LISTOS!
+    </p>
+    <h1
+      class="text-6xl md:text-8xl font-clash font-[550] bg-gradient-to-r from-white/40 via-white to-white/25 inline-block text-transparent bg-clip-text"
+    >
+      FESTECH <span
+        class="text-black relative before:content-[''] overflow-hidden before:absolute before:w-full before:h-full before:bg-gradient-to-r before:from-[#FFFE65] before:to-[#F7DF1F] before:rotate-2 mix-blend-lighten before:-z-30 before:left-0 before:top-0"
+        >2025</span
+      >
+    </h1>
+    <div class="text-[clamp(1.8rem,5vw,4.5rem)] leading-[100%] font-light space-y-2">
+      <div
+        id="countdown"
+        class="flex justify-center gap-4 md:gap-8 text-javascript font-clash font-bold"
+      >
+        <div class="text-center">
+          <div id="days" class="text-4xl md:text-6xl">0</div>
+          <div class="text-sm md:text-base text-white/80">DÍAS</div>
+        </div>
+        <div class="text-center">
+          <div id="hours" class="text-4xl md:text-6xl">0</div>
+          <div class="text-sm md:text-base text-white/80">HORAS</div>
+        </div>
+        <div class="text-center">
+          <div id="minutes" class="text-4xl md:text-6xl">0</div>
+          <div class="text-sm md:text-base text-white/80">MIN</div>
+        </div>
+        <div class="text-center">
+          <div id="seconds" class="text-4xl md:text-6xl">0</div>
+          <div class="text-sm md:text-base text-white/80">SEG</div>
+        </div>
+      </div>
+    </div>
+    <a
+      class="group relative inline-flex items-center justify-center gap-3 px-8 py-4 bg-gradient-to-r from-[#FFFE65] to-[#F7DF1F] text-black font-bold text-lg rounded-full hover:scale-105 transition-all duration-300 ease-in-out hover:shadow-lg hover:shadow-yellow-400/25 w-fit mx-auto"
+      href="https://forms.gle/aTY58rGQG8mJMViR9"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <span class="relative z-10">REGÍSTRATE AQUÍ</span>
+      <div
+        class="font-bold absolute inset-0 bg-gradient-to-r from-[#F7DF1F] to-[#FFFE65] opacity-0 group-hover:opacity-100 rounded-full transition-opacity duration-300"
+      >
+      </div>
+    </a>
+    <p
+      class="text-[#ffffff] text-center text-xl text-balance md:text-2xl font-bold bg-black/20 backdrop-blur-sm rounded-lg px-6 py-3 mx-auto max-w-4xl"
+    >
+      📍 Centro de Convenciones Alfonso López Pumarejo, Gobernación del Tolima
+    </p>
+
+    <section
+      class="relative w-full pt-16 sm:pt-20 pb-12 sm:pb-16 text-center font-clash mx-auto overflow-hidden"
+    >
+      <div class="absolute inset-0 overflow-hidden pointer-events-none">
+        <div
+          class="absolute top-1/4 left-1/4 w-32 h-32 bg-[#FFFE65]/20 rounded-full blur-xl animate-float"
+        >
+        </div>
+        <div
+          class="absolute bottom-1/4 right-1/4 w-24 h-24 bg-[#F7DF1F]/30 rounded-full blur-lg animate-float-delayed"
+        >
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 w-16 h-16 bg-[#FFFE65]/15 rounded-full blur-md animate-pulse-slow"
+        >
+        </div>
+        <div class="absolute top-10 right-10 w-2 h-2 bg-[#FFFE65] rounded-full animate-twinkle">
+        </div>
+        <div
+          class="absolute bottom-20 left-10 w-1 h-1 bg-[#F7DF1F] rounded-full animate-twinkle-delayed"
+        >
+        </div>
+      </div>
+
+      <div class="absolute inset-0 opacity-5">
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-transparent via-[#FFFE65] to-transparent h-px top-1/3 animate-pulse"
+        >
+        </div>
+        <div
+          class="absolute inset-0 bg-gradient-to-b from-transparent via-[#FFFE65] to-transparent w-px left-1/3 animate-pulse delay-500"
+        >
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 lg:px-8 mb-16 relative z-10">
+        <h2
+          class="lg:text-[64px] md:text-5xl text-[34px] font-bold mb-16 text-center opacity-0 animate-fade-in-up"
+        >
+          ¿QUÉ ES <UnderlineWord
+            class="text-javascript -translate-y-2 lg:-translate-y-4 -translate-x-10 lg:-translate-x-0"
+            ><span class="text-javascript">FESTECH</span>?</UnderlineWord
+          >
+        </h2>
+
+        <div class="grid lg:grid-cols-2 gap-20 items-start">
+          <div class="lg:order-1 order-2 space-y-8 opacity-0 animate-fade-in-left">
+            <p
+              class="text-xl md:text-2xl text-white/90 leading-relaxed text-center lg:text-left transition-colors duration-300 hover:text-white group cursor-pointer"
+            >
+              Festival de Ciencia, Tecnología e Innovación, una experiencia única que fusiona
+              conferencias, eventos interactivos y oportunidades empresariales en el emocionante
+              mundo de las tecnologías de la información y la comunicación.
+              <span
+                class="inline-block ml-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                >✨</span
+              >
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+              <div
+                class="group relative bg-gradient-to-br from-[#FFFE65]/25 to-[#F7DF1F]/15 backdrop-blur-sm rounded-3xl p-6 border-2 border-[#FFFE65]/40 hover:border-[#FFFE65]/80 transition-all duration-500 hover:scale-110 cursor-pointer transform-gpu hover:rotate-1 hover:shadow-2xl hover:shadow-[#FFFE65]/30"
+              >
+                <div class="text-center space-y-3">
+                  <h3
+                    class="text-[#FFFE65] font-bold text-lg group-hover:text-white transition-colors duration-300"
+                  >
+                    Ciencia
+                  </h3>
+                  <p
+                    class="text-white/80 text-sm group-hover:text-white/90 transition-colors duration-300"
+                  >
+                    Descubrimientos e innovación científica
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-[#FFFE65]/20 to-[#F7DF1F]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                >
+                </div>
+              </div>
+
+              <div
+                class="group relative bg-gradient-to-br from-[#FFFE65]/25 to-[#F7DF1F]/15 backdrop-blur-sm rounded-3xl p-6 border-2 border-[#FFFE65]/40 hover:border-[#FFFE65]/80 transition-all duration-500 hover:scale-110 cursor-pointer transform-gpu hover:rotate-1 hover:shadow-2xl hover:shadow-[#FFFE65]/30"
+              >
+                <div class="text-center space-y-3">
+                  <h3
+                    class="text-[#FFFE65] font-bold text-lg group-hover:text-white transition-colors duration-300"
+                  >
+                    Tecnología
+                  </h3>
+                  <p
+                    class="text-white/80 text-sm group-hover:text-white/90 transition-colors duration-300"
+                  >
+                    Últimas tendencias TIC del futuro
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-[#FFFE65]/20 to-[#F7DF1F]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                >
+                </div>
+              </div>
+
+              <div
+                class="group relative bg-gradient-to-br from-[#FFFE65]/25 to-[#F7DF1F]/15 backdrop-blur-sm rounded-3xl p-6 border-2 border-[#FFFE65]/40 hover:border-[#FFFE65]/80 transition-all duration-500 hover:scale-110 cursor-pointer transform-gpu hover:rotate-1 hover:shadow-2xl hover:shadow-[#FFFE65]/30 sm:col-span-2 lg:col-span-1"
+              >
+                <div class="text-center space-y-3">
+                  <h3
+                    class="text-[#FFFE65] font-bold text-lg group-hover:text-white transition-colors duration-300"
+                  >
+                    Innovación
+                  </h3>
+                  <p
+                    class="text-white/80 text-sm group-hover:text-white/90 transition-colors duration-300"
+                  >
+                    Soluciones disruptivas
+                  </p>
+                </div>
+                <div
+                  class="absolute inset-0 bg-gradient-to-r from-[#FFFE65]/20 to-[#F7DF1F]/20 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"
+                >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:order-2 order-1 flex justify-center opacity-0 animate-fade-in-right">
+            <div class="relative group cursor-pointer" id="festech-image">
+              <div class="absolute -inset-8 opacity-60">
+                <div
+                  class="absolute top-0 left-0 w-3 h-3 bg-[#FFFE65] rounded-full animate-bounce-slow"
+                >
+                </div>
+                <div
+                  class="absolute top-8 right-4 w-2 h-2 bg-[#F7DF1F] rounded-full animate-bounce-slow delay-300"
+                >
+                </div>
+                <div
+                  class="absolute bottom-12 left-8 w-2.5 h-2.5 bg-[#FFFE65] rounded-full animate-bounce-slow delay-700"
+                >
+                </div>
+                <div
+                  class="absolute top-16 left-16 w-1.5 h-1.5 bg-[#F7DF1F] rounded-full animate-ping delay-1000"
+                >
+                </div>
+                <div
+                  class="absolute bottom-4 right-12 w-1 h-1 bg-[#FFFE65] rounded-full animate-ping delay-500"
+                >
+                </div>
+              </div>
+
+              <div
+                class="absolute -inset-4 border border-[#FFFE65]/20 rounded-full animate-spin-slow"
+              >
+              </div>
+              <div
+                class="absolute -inset-8 border border-[#F7DF1F]/10 rounded-full animate-spin-reverse"
+              >
+              </div>
+
+              <div
+                class="relative overflow-hidden rounded-3xl transform-gpu transition-all duration-700 hover:scale-[1.08] hover:rotate-2 group-hover:shadow-2xl group-hover:shadow-[#FFFE65]/50"
+              >
+                <div
+                  class="w-full max-w-lg h-72 md:h-96 bg-gradient-to-br from-[#FFFE65]/40 via-[#FFFE65]/20 to-transparent rounded-3xl border-3 border-[#FFFE65]/50 backdrop-blur-sm overflow-hidden group-hover:border-[#FFFE65] transition-all duration-500"
+                >
+                  <img
+                    src="/img/hero-2.webp"
+                    alt="Festech 2025 - Festival de Tecnología"
+                    class="w-full h-full object-cover rounded-3xl group-hover:scale-115 transition-transform duration-1000 filter group-hover:brightness-110 group-hover:contrast-110"
+                  />
+
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-[#FFFE65]/30 opacity-0 group-hover:opacity-100 transition-all duration-700 rounded-3xl"
+                  >
+                    <div
+                      class="absolute bottom-6 left-6 right-6 transform translate-y-8 group-hover:translate-y-0 transition-transform duration-500"
+                    >
+                      <div class="space-y-3">
+                        <p class="text-white font-bold text-2xl mb-2">Festech 2025</p>
+                        <p class="text-[#FFFE65] text-lg font-semibold">
+                          ✨ Explora el futuro de la tecnología
+                        </p>
+                        <div class="flex items-center gap-2 text-white/90 text-sm">
+                          <svg
+                            class="w-4 h-4"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
+                            ></path>
+                          </svg>
+                          <span>Haz clic para ver la imagen</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="absolute top-6 right-6 bg-black/70 rounded-full p-4 opacity-0 group-hover:opacity-100 transition-all duration-500 transform scale-50 group-hover:scale-100 backdrop-blur-md border border-[#FFFE65]/30"
+                  >
+                    <svg
+                      class="w-8 h-8 text-[#FFFE65] group-hover:rotate-12 transition-transform duration-300"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M14.828 14.828a4 4 0 01-5.656 0M9 10h1m4 0h1m-6 4h8a2 2 0 002-2V7a2 2 0 00-2-2H8a2 2 0 00-2 2v5a2 2 0 002 2z"
+                      ></path>
+                    </svg>
+                  </div>
+
+                  <div
+                    class="absolute inset-0 rounded-3xl bg-gradient-to-r from-[#FFFE65] via-[#F7DF1F] to-[#FFFE65] p-0.5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 -z-10"
+                  >
+                    <div class="w-full h-full bg-transparent rounded-3xl"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="image-modal"
+        class="fixed inset-0 bg-black/90 backdrop-blur-sm z-50 hidden items-center justify-center p-4"
+      >
+        <div class="relative max-w-4xl w-full">
+          <button
+            id="close-modal"
+            class="absolute -top-12 right-0 text-white/80 hover:text-white text-2xl font-bold w-10 h-10 flex items-center justify-center rounded-full bg-black/50 hover:bg-black/70 transition-colors duration-300"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+          <div class="bg-gradient-to-br from-[#FFFE65]/20 to-[#F7DF1F]/10 p-1 rounded-2xl">
+            <img src="/img/hero-2.webp" alt="Festech 2025" class="w-full h-auto rounded-2xl" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let countdownInterval: number | undefined
+
+      function updateCountdown() {
+        try {
+          let targetDate: number
+
+          try {
+            targetDate = new Date('2025-09-11T09:00:00-05:00').getTime()
+          } catch (error) {
+            targetDate = new Date(Date.UTC(2025, 8, 11, 14, 0, 0)).getTime()
+          }
+
+          if (isNaN(targetDate)) {
+            const baseDate = new Date(2025, 8, 11, 9, 0, 0)
+            const userTimezoneOffset = baseDate.getTimezoneOffset()
+
+            const colombiaOffsetMinutes = 5 * 60
+
+            const offsetDifferenceMs = (userTimezoneOffset - colombiaOffsetMinutes) * 60 * 1000
+
+            targetDate = baseDate.getTime() + offsetDifferenceMs
+          }
+
+          const now = new Date().getTime()
+          const difference = targetDate - now
+
+          if (
+            window.location.hostname === 'localhost' ||
+            window.location.hostname === '127.0.0.1'
+          ) {
+            const targetDateObject = new Date(targetDate)
+
+            const targetHour = targetDateObject.getHours()
+            console.log(
+              '✅ Hora verificada:',
+              targetHour === 9 ? '9:00 AM ✓' : `${targetHour}:00 (⚠️ Debería ser 9:00 AM)`
+            )
+          }
+
+          if (difference > 0) {
+            const days = Math.floor(difference / (1000 * 60 * 60 * 24))
+            const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+            const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
+            const seconds = Math.floor((difference % (1000 * 60)) / 1000)
+
+            const elements = {
+              days: document.getElementById('days'),
+              hours: document.getElementById('hours'),
+              minutes: document.getElementById('minutes'),
+              seconds: document.getElementById('seconds'),
+            }
+
+            if (elements.days) elements.days.textContent = days.toString().padStart(2, '0')
+            if (elements.hours) elements.hours.textContent = hours.toString().padStart(2, '0')
+            if (elements.minutes) elements.minutes.textContent = minutes.toString().padStart(2, '0')
+            if (elements.seconds) elements.seconds.textContent = seconds.toString().padStart(2, '0')
+          } else {
+            const elements = {
+              days: document.getElementById('days'),
+              hours: document.getElementById('hours'),
+              minutes: document.getElementById('minutes'),
+              seconds: document.getElementById('seconds'),
+            }
+
+            if (elements.days) elements.days.textContent = '00'
+            if (elements.hours) elements.hours.textContent = '00'
+            if (elements.minutes) elements.minutes.textContent = '00'
+            if (elements.seconds) elements.seconds.textContent = '00'
+
+            console.log('🎉 ¡El evento Festech 2025 ha comenzado!')
+          }
+        } catch (error) {
+          console.error('Error en el countdown:', error)
+          const elementIds = ['days', 'hours', 'minutes', 'seconds']
+          elementIds.forEach((id: string) => {
+            const element = document.getElementById(id)
+            if (element) element.textContent = '00'
+          })
+        }
+      }
+
+      function initCountdown() {
+        if (countdownInterval) {
+          clearInterval(countdownInterval)
+        }
+
+        updateCountdown()
+
+        countdownInterval = setInterval(updateCountdown, 1000)
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCountdown)
+      } else {
+        initCountdown()
+      }
+
+      window.addEventListener('beforeunload', function () {
+        if (countdownInterval) {
+          clearInterval(countdownInterval)
+        }
+      })
+    </script>
+
+    <script>
+      const festechImage = document.getElementById('festech-image')
+      const imageModal = document.getElementById('image-modal')
+      const closeModal = document.getElementById('close-modal')
+
+      if (festechImage && imageModal && closeModal) {
+        festechImage.addEventListener('click', () => {
+          imageModal.classList.remove('hidden')
+          imageModal.classList.add('flex')
+          document.body.style.overflow = 'hidden'
+        })
+
+        const closeModalFunction = () => {
+          imageModal.classList.add('hidden')
+          imageModal.classList.remove('flex')
+          document.body.style.overflow = 'auto'
+        }
+
+        closeModal.addEventListener('click', closeModalFunction)
+
+        imageModal.addEventListener('click', (e) => {
+          if (e.target === imageModal) {
+            closeModalFunction()
+          }
+        })
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && !imageModal.classList.contains('hidden')) {
+            closeModalFunction()
+          }
+        })
+      }
+    </script>
+  </div>
+</div>
+
+<style>
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes fade-in-right {
+    from {
+      opacity: 0;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0px) translateX(0px);
+    }
+    33% {
+      transform: translateY(-10px) translateX(5px);
+    }
+    66% {
+      transform: translateY(5px) translateX(-5px);
+    }
+  }
+
+  @keyframes bounce-slow {
+    0%,
+    20%,
+    53%,
+    80%,
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+    40%,
+    43% {
+      transform: translate3d(0, -15px, 0);
+    }
+    70% {
+      transform: translate3d(0, -7px, 0);
+    }
+    90% {
+      transform: translate3d(0, -2px, 0);
+    }
+  }
+
+  @keyframes twinkle {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+  }
+
+  @keyframes spin-slow {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+    to {
+      transform: rotate(0deg);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out 0.3s both;
+  }
+
+  .animate-fade-in-left {
+    animation: fade-in-left 0.8s ease-out 0.6s both;
+  }
+
+  .animate-fade-in-right {
+    animation: fade-in-right 0.8s ease-out 0.9s both;
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 8s ease-in-out infinite reverse;
+  }
+
+  .animate-bounce-slow {
+    animation: bounce-slow 3s infinite;
+  }
+
+  .animate-twinkle {
+    animation: twinkle 2s ease-in-out infinite;
+  }
+
+  .animate-twinkle-delayed {
+    animation: twinkle 2.5s ease-in-out infinite 0.5s;
+  }
+
+  .animate-spin-slow {
+    animation: spin-slow 20s linear infinite;
+  }
+
+  .animate-spin-reverse {
+    animation: spin-reverse 30s linear infinite;
+  }
+
+  .animate-pulse-slow {
+    animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+
+  .group:hover .group-hover\:rotate-12 {
+    transform: rotate(12deg);
+  }
+
+  .group:hover .group-hover\:scale-125 {
+    transform: scale(1.25);
+  }
+
+  .group:hover .group-hover\:scale-115 {
+    transform: scale(1.15);
+  }
+
+  .backdrop-blur-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+
+  .backdrop-blur-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
+  .border-3 {
+    border-width: 3px;
+  }
+</style>

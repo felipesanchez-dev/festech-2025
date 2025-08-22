@@ -1,0 +1,160 @@
+---
+import Footer from '@/presentation/sections/Footer.astro'
+import Header from '@/presentation/sections/Header.astro'
+interface Props {
+  title?: string
+}
+const { title } = Astro.props
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.webp" />
+    <title>
+      {
+        title
+          ? title + ' | FesTech Festival Ciencia Tecnología Innovación'
+          : 'Festech 2025 - Festival de Ciencia, Tecnología e Innovación | Ibague, El Espinal - Tolima'
+      }
+    </title>
+
+    <meta
+      name="description"
+      content="FesTech 2025 es el Festival de Ciencia, Tecnología e Innovación en Tolima: el 8 set en El Espinal y del 11 al 13 set en Ibagué. Territorios inteligentes, IA y tecnologías cuánticas. Networking, ruedas de negocio, talleres y zona geek - ¡Inscríbete ya!"
+    />
+
+    <meta
+      name="keywords"
+      content="Festech, festival ciencia tecnología innovación, Tolima, Ibagué, El Espinal, inteligencia artificial, tecnologías cuánticas, territorios inteligentes"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href="https://www.festech.co" />
+
+    <meta
+      property="og:image"
+      content="https://s3.wasabisys.com/assets.festech.co/assets/media/logos/fav-festch_extraLargeThumb.webp"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:title" content="FesTech 2025" />
+    <meta
+      property="og:description"
+      content="FesTech 2025 es el Festival de Ciencia, Tecnología e Innovación en Tolima"
+    />
+    <meta property="og:url" content="https://www.festech.co" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@festech_co" />
+    <meta name="twitter:creator" content="@festech_co" />
+    <meta name="twitter:title" content="FesTech 2025" />
+    <meta
+      name="twitter:description"
+      content="FesTech 2025 es el Festival de Ciencia, Tecnología e Innovación en Tolima"
+    />
+    <meta
+      name="twitter:image"
+      content="https://s3.wasabisys.com/assets.festech.co/assets/media/logos/fav-festch_extraLargeThumb.webp"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "FesTech 2025 - Festival de Ciencia, Tecnología e Innovación",
+        "startDate": "2025-09-08",
+        "endDate": "2025-09-13",
+        "location": [
+          {
+            "@type": "Place",
+            "name": "Ibague, El Espinal, Tolima",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ibague, El Espinal",
+              "addressRegion": "Tolima",
+              "addressCountry": "CO"
+            }
+          },
+          {
+            "@type": "Place",
+            "name": "Centro de Convenciones Alfonso López Pumarejo",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Ibagué",
+              "addressRegion": "Tolima",
+              "addressCountry": "CO"
+            }
+          }
+        ],
+        "image": ["https://www.festech.co"],
+        "description": "FesTech 2025 es el Festival de Ciencia, Tecnología e Innovación - Territorios inteligentes, Tecnologías cuánticas e Inteligencia artificial - 8 set en El Espinal, 11-13 set en Ibagué.",
+        "organizer": {
+          "@type": "Organization",
+          "name": "Festech",
+          "url": "https://festech.co"
+        }
+      }
+    </script>
+    <script src="https://js.tito.io/v2/with/inline/without/widget-css" async></script>
+    <link rel="stylesheet" href="/css/tito-widget.css" />
+  </head>
+  <body class="relative">
+    <div
+      class="absolute h-full w-full bg-[url(/img/fondo-hero.webp)] bg-cover bg-no-repeat bottom-0 left-0 right-0 top-0 opacity-20 bg-top bg-blend-multiply"
+    >
+    </div>
+    <div
+      class="absolute h-full w-full bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:58px_58px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)]"
+    >
+    </div>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+
+  @font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/fonts/inter.woff2') format('woff2');
+  }
+
+  @font-face {
+    font-family: 'Clash';
+    font-style: normal;
+    font-weight: 100 900;
+    font-display: swap;
+    src: url('/fonts/clash.woff2') format('woff2');
+  }
+
+  html,
+  body {
+    background: #000;
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion) {
+    html,
+    body {
+      scroll-behavior: auto;
+    }
+  }
+</style>

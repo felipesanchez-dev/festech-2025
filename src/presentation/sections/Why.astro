@@ -1,0 +1,141 @@
+---
+import Container from '../components/ui/Container.astro'
+import WhyCard from '../components/features/WhyCard.astro'
+---
+
+<section class="relative bg-black text-white md:max-w-5/6 mx-auto px-section py-12 bg-cover bg-center bg-no-repeat" style="background-image: url('/img/conoce-a-nuestra-audiencia.webp');">
+  <div class="absolute inset-0 bg-black bg-opacity-60 z-0"></div>
+  <div class="absolute z-10">
+    <svg
+      width="770"
+      height="1123"
+      viewBox="0 0 770 1123"
+      fill="none"
+      class="hidden lg:block"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M-944 1.49999C-709.113 53.3649 -143.046 152.793 92.9414 419.535C392.057 757.633 -57.4089 1144.34 -121.37 945.92C-179.238 766.395 449.496 870.022 768.541 1277.71"
+        stroke="url(#paint0_linear_7_655)"
+        stroke-opacity="0.1"
+        stroke-width="1.5"
+        stroke-dasharray="12 12"></path>
+      <defs>
+        <linearGradient
+          id="paint0_linear_7_655"
+          x1="278.166"
+          y1="428.355"
+          x2="-453.625"
+          y2="850.854"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stop-color="white"></stop>
+          <stop offset="1" stop-color="#999999" stop-opacity="0"></stop>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+
+  <Container class="relative z-20">
+    <h2
+      class="md:text-6xl text-4xl md:w-5/6 mx-auto text-balance text-center font-medium font-clash mb-12"
+    >
+      ¿Por qué no debes perderte Festech?
+    </h2>
+    <h3 class="md:text-2xl text-lg mx-auto text-balance text-center font-light opacity-90">
+      <span class="font-bold">FESTECH 2025</span> gira en torno a la Computación Cuántica, Ciudades Inteligentes
+      e Inteligencia Artificial, todo en mas de 50 actividades de carácter académico, lúdico y empresarial.
+    </h3>
+
+    <div id="cards" class="flex pt-6 pb-12 gap-x-6 justify-around flex-col xl:flex-row gap-y-6">
+      <WhyCard>
+        <h3 slot="title" class="font-clash md:text-4xl text-2xl font-[450]">
+          <strong class="text-javascript font-[900]"> Entretenimiento y Cultura </strong>
+        </h3>
+        <div slot="description" class="flex flex-col gap-y-4 opacity-90">
+          <ul class="flex flex-col gap-y-4 list-disc pl-5">
+            <li>
+              <strong class="font-bold">Zona Geek: </strong>Torneos de videojuegos + concurso
+              cosplay
+            </li>
+            <li>
+              <strong class="font-bold">Zona VR (Realidad Virtual)</strong>
+            </li>
+            <li>
+              <strong class="font-bold">Carrera de Drones</strong>
+            </li>
+            <li>
+              <strong class="font-bold">Torneo de Robots</strong>
+            </li>
+            <li>
+              <strong class="font-bold"
+                >...y muchas más experiencias innovadoras por descubrir</strong
+              >
+            </li>
+          </ul>
+        </div>
+      </WhyCard>
+      <WhyCard>
+        <h3 slot="title" class="font-clash md:text-4xl text-2xl font-[450]">
+          <strong class="text-javascript font-[900]">Empresariales</strong>
+        </h3>
+        <div slot="description" class="flex flex-col gap-y-4 opacity-90">
+          <ul class="flex flex-col gap-y-4 list-disc pl-5">
+            <li>
+              <strong class="font-bold">Rueda de Negocios Presencial:</strong> conecta con aliados estratégicos
+              y genera oportunidades reales de crecimiento.
+            </li>
+            <li>
+              <strong class="font-bold">Networking Empresarial y Sector Público:</strong> impulsa relaciones
+              con líderes, instituciones y empresas del ecosistema tecnológico.
+            </li>
+            <li>
+              <strong class="font-bold">Muestras Tecnológicas:</strong> conoce las últimas innovaciones
+              aplicadas a la industria.
+            </li>
+          </ul>
+        </div>
+      </WhyCard>
+      <WhyCard>
+        <h3 slot="title" class="font-clash md:text-4xl text-2xl font-[450]">
+          <strong class="text-javascript font-[900]">Académicas</strong>
+        </h3>
+        <div slot="description" class="flex flex-col gap-y-4">
+          <ul class="flex flex-col gap-y-4 list-disc pl-5">
+            <li>
+              <strong class="font-bold"
+                >Conferencias con expertos nacionales e internacionales:</strong
+              > aprende de líderes en ciencia, tecnología e innovación que marcan tendencia en el mundo.
+            </li>
+            <li>
+              <strong class="font-bold">Talleres interactivos:</strong>
+            </li>
+            <li>
+              <strong class="font-bold">Charlas sobre Ciudades Inteligentes:</strong>
+            </li>
+            <li>
+              <strong class="font-bold">Muestra Universitaria:</strong>
+            </li>
+          </ul>
+        </div>
+      </WhyCard>
+    </div>
+  </Container>
+</section>
+
+<script>
+  const cards = document.getElementById('cards')?.children as HTMLCollection
+
+  if (cards) {
+    document.getElementById('cards')!.onmousemove = (e) => {
+      for (const card of cards) {
+        const htmlCard = card as HTMLElement
+        const rect = htmlCard.getBoundingClientRect()
+        const x = e.clientX - rect.left
+        const y = e.clientY - rect.top
+        htmlCard.style.setProperty('--mouse-x', `${x}px`)
+        htmlCard.style.setProperty('--mouse-y', `${y}px`)
+      }
+    }
+  }
+</script>

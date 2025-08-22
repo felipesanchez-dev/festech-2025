@@ -1,0 +1,28 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+CALSCALE:GREGORIAN
+BEGIN:VTIMEZONE
+TZID:America/Bogota
+BEGIN:STANDARD
+TZNAME:COT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0500
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTAMP:20250821T000000Z
+UID:festech2025-colombia
+DTSTART;VALUE=DATE:20250911
+DTEND;VALUE=DATE:20250913
+SUMMARY:Festech 2025
+URL:https://festech.co/
+DESCRIPTION:¡Únete a Festech 2025!\n📅 Fecha: Del 11 al 13 de septiembre de 2025\n📍 Lugar: Gobernación del Tolima\, Tolima\, Colombia\n\n¿Listo para sumergirte en el futuro de la tecnología? 🚀 Festech 2025 es el evento imperdible donde el corazón tecnológico de Colombia latirá en el Tolima.\n\n✨ ¿Qué te espera?\n\n    🌐 Charlas inspiradoras: Aprende de los líderes de la industria y de las mentes más brillantes del ecosistema tecnológico.\n    🤝 Networking: Conecta con una comunidad vibrante de desarrolladores\, comparte ideas y encuentra nuevas oportunidades.\n    🎉 Actividades especiales: Talleres\, paneles y\, por supuesto\, ¡momentos para divertirse!\n\nYa seas un principiante o un experto\, Festech 2025 tiene algo para ti. No te pierdas la oportunidad de expandir tus habilidades\, descubrir las últimas tendencias y ser parte de una comunidad que está transformando la tecnología en Colombia.\n\n¡Nos vemos allí!
+LOCATION:Gobernación del Tolima\, Tolima\, Colombia
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Festech 2025
+TRIGGER:-P1D
+END:VALARM
+END:VEVENT
+END:VCALENDAR

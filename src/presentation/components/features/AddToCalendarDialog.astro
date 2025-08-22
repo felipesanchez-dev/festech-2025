@@ -1,0 +1,93 @@
+---
+import Calendar from '@/icons/Calendar.svg'
+import Google from '@/icons/GoogleSmallLogo.svg'
+import Outlook from '@/icons/OutlookLogo.svg'
+const calendarTitle = encodeURIComponent('Festech 2025')
+const calendarStartDate = '20250911'
+const calendarEndDate = '20250913'
+const calendarLocation = encodeURIComponent('Gobernación del Tolima, Tolima, Colombia')
+const calendarBody = encodeURIComponent(
+  '¡Únete a Festech 2025!\n📅 Fecha: Del 11 al 13 de septiembre de 2025\n📍 Lugar: Gobernación del Tolima, Tolima, Colombia\n\n¿Listo para sumergirte en el futuro de la tecnología? 🚀 Festech 2025 es el evento imperdible donde el corazón tecnológico de Colombia latirá en el Tolima.\n\n✨ ¿Qué te espera?\n\n\t🌐 Charlas inspiradoras: Aprende de los líderes de la industria y de las mentes más brillantes del ecosistema tecnológico.\n\t🤝 Networking: Conecta con una comunidad vibrante de desarrolladores, comparte ideas y encuentra nuevas oportunidades.\n\t🎉 Actividades especiales: Talleres, paneles y, por supuesto, ¡momentos para divertirse!\n\nYa seas un principiante o un experto, Festech 2025 tiene algo para ti. No te pierdas la oportunidad de expandir tus habilidades, descubrir las últimas tendencias y ser parte de una comunidad que está transformando la tecnología en Colombia.\n\n¡Nos vemos allí!'
+)
+const calendars = [
+  {
+    name: 'Google',
+    url: `https://calendar.google.com/calendar/render?action=TEMPLATE&dates=${calendarStartDate}%2F${calendarEndDate}&details=${calendarBody}&location=${calendarLocation}&text=${calendarTitle}`,
+    icon: Google,
+  },
+  {
+    name: 'Outlook',
+    url: `https://outlook.live.com/calendar/0/action/compose?allday=true&body=${calendarBody}&enddt=2025-09-14T01%3A00%3A00&location=${calendarLocation}&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2025-09-11T01%3A00%3A00&subject=${calendarTitle}`,
+    icon: Outlook,
+  },
+  {
+    name: 'iPhone',
+    url: '/festech2025.ics',
+    icon: Calendar,
+  },
+]
+---
+
+<div class="group relative flex flex-col">
+  <button
+    type="button"
+    class="px-5 py-3 font-clash font-[450] border flex justify-center w-full md:w-auto gap-2 transition items-center rounded-t-md shadow-lg !text-black hover:!text-black bg-transparent border-black hover:bg-white"
+    id="add-to-calendar-btn"
+  >
+    <Calendar class="size-4 !text-black" />
+    Agregalo a tu calendario
+  </button>
+  <div
+    class="hidden absolute overflow-hidden z-10 rounded-b-md top-full left-0 flex-col items-center justify-center gap-y-2 w-full bg-zinc-950"
+    id="calendar-dialog"
+  >
+    {
+      calendars.map(({ name, url, icon: Icon }) => (
+        <a
+          href={url}
+          class="z-50 w-full flex flex-row justify-start items-center gap-x-4 py-3 px-4 hover:bg-zinc-800 text-white"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon class="size-4" />
+          {name}
+        </a>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const button = document.getElementById('add-to-calendar-btn')
+    const dialog = document.getElementById('calendar-dialog')
+    let isOpen = false
+
+    if (button && dialog) {
+      button.addEventListener('click', function (e) {
+        e.stopPropagation()
+        isOpen = !isOpen
+        if (isOpen) {
+          dialog.classList.remove('hidden')
+          dialog.classList.add('flex')
+        } else {
+          dialog.classList.add('hidden')
+          dialog.classList.remove('flex')
+        }
+      })
+
+      document.addEventListener('click', function (e) {
+        const target = e.target as Node
+        if (isOpen && !button.contains(target) && !dialog.contains(target)) {
+          isOpen = false
+          dialog.classList.add('hidden')
+          dialog.classList.remove('flex')
+        }
+      })
+
+      dialog.addEventListener('click', function (e) {
+        e.stopPropagation()
+      })
+    }
+  })
+</script>

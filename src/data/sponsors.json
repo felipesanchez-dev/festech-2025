@@ -1,0 +1,24 @@
+[
+  {
+    "category": "",
+    "icon": "",
+    "color": "#09f",
+    "companies": [
+      {
+        "name": "Alcaldia de Ibague",
+        "image": "https://s3.wasabisys.com/assets.festech.co/assets/media/inicio/empresas/alcaldiaibague_extraLargeThumb.webp",
+        "url": "https://ibague.gov.co"
+      },
+      {
+        "name": "Gobernacion Del Tolima",
+        "image": "https://s3.wasabisys.com/assets.festech.co/assets/media/inicio/empresas/gobiernotolima_extraLargeThumb.webp",
+        "url": "https://tolima.gov.co"
+      },
+      {
+        "name": "Camara de Comercio Ibague",
+        "image": "https://s3.wasabisys.com/assets.festech.co/assets/media/logo-cci-ajustado-home.svg",
+        "url": "https://ccibague.org"
+      }
+    ]
+  }
+]
